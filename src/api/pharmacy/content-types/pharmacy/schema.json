@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pharmacies",
+  "info": {
+    "singularName": "pharmacy",
+    "pluralName": "pharmacies",
+    "displayName": "Pharmacy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "Longitude": {
+      "type": "float"
+    },
+    "Latitude": {
+      "type": "float"
+    },
+    "PhoneNumber": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::city.city",
+      "inversedBy": "pharmacies"
+    },
+    "WorkingHours": {
+      "displayName": "WorkingHours",
+      "type": "component",
+      "repeatable": false,
+      "component": "working-hours.working-hours"
+    },
+    "day_off": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::day-off.day-off",
+      "inversedBy": "pharmacies"
+    },
+    "duty_day": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::duty-day.duty-day",
+      "inversedBy": "pharmacies"
+    }
+  }
+}

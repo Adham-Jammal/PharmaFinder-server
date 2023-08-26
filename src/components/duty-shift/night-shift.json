@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_duty_shift_night_shifts",
+  "info": {
+    "displayName": "NightShift"
+  },
+  "options": {},
+  "attributes": {
+    "NightShiftDay": {
+      "type": "string"
+    },
+    "NightStartTime": {
+      "type": "time"
+    },
+    "NightEndTime": {
+      "type": "time"
+    }
+  }
+}

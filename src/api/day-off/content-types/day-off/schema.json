@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "day_offs",
+  "info": {
+    "singularName": "day-off",
+    "pluralName": "day-offs",
+    "displayName": "DayOff",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Day": {
+      "type": "string"
+    },
+    "pharmacies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pharmacy.pharmacy",
+      "mappedBy": "day_off"
+    }
+  }
+}

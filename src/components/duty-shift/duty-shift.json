@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_duty_shift_duty_shifts",
+  "info": {
+    "displayName": "LunchShift",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LunchShiftDay": {
+      "type": "string"
+    },
+    "LunchStartTime": {
+      "type": "time"
+    },
+    "LunchEndTime": {
+      "type": "time"
+    }
+  }
+}

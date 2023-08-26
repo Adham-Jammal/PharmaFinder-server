@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cities",
+  "info": {
+    "singularName": "city",
+    "pluralName": "cities",
+    "displayName": "City",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CityName": {
+      "type": "string"
+    },
+    "pharmacies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pharmacy.pharmacy",
+      "mappedBy": "city"
+    },
+    "ArabicName": {
+      "type": "string"
+    }
+  }
+}
